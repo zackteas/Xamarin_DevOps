@@ -1,6 +1,8 @@
 """
 Program to filter through and grab data from IMDb and Wikipedia.
 """
+from httplib import *
+from urllib2 import *
 
 def getMovieList():
   
