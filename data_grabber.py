@@ -61,7 +61,7 @@ def calcAvgAge(list actorAges):
   return age
   
 def main():
-  movies = getMovieList()
+  movies = ["Interstellar", "The Hunger Games: Mockingjay - Part1", "Big Hero 6", "Dumb and Dumber To", "Beyond the Lights", "St. Vincent"]
   print("The movies currently playing in US theaters are: \n=======================================\n")
   for i in range(len(movies)):
     actors = []
