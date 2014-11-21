@@ -33,7 +33,7 @@ def getActorList(movie):
     if (len(actor_section[i])>1):
       actor_section[i] = actor_section[i][1].split("\"",1)
     if (actor_section[i][0]=='<'):
-      count++
+      count+=1
   for i in range(count):
     for j in range(len(actor_section)):
       if (actor_section[i][0]!='<'):
@@ -62,7 +62,7 @@ def calcAvgAge(actorAges):
   
 def main():
   movies = ["Interstellar", "The Hunger Games: Mockingjay - Part1", "Big Hero 6", "Dumb and Dumber To", "Beyond the Lights", "St. Vincent"]
-  print("The movies currently playing in US theaters are: \n=======================================\n")
+  print("The movies currently playing in US theaters are: \n============================================================\n")
   for i in range(len(movies)):
     actors = []
     actorsAge = 0
