@@ -16,7 +16,7 @@ def getMovieList():
   
   
   
-def getActorList(str movie):
+def getActorList(movie):
   actor_list = []
   count = 0
   baseurl = "http://en.wikipedia.org/wiki/"
@@ -40,7 +40,7 @@ def getActorList(str movie):
         actor_list.append(actor_section[i])
       break
   
-def getActorAge(list actors):
+def getActorAge(actors):
   actorAges = []
   for i in len(actors):
     baseurl = "http://en.wikipedia.org/wiki/"
@@ -53,7 +53,7 @@ def getActorAge(list actors):
     actorAges.append(int(age_section))
   return actorAges
   
-def calcAvgAge(list actorAges):
+def calcAvgAge(actorAges):
   age = 0.0
   for i in range(len(actorAges)):
     age+=actors[i]
