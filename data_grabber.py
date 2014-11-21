@@ -1,7 +1,6 @@
 """
 Program to filter through and grab data from IMDb and Wikipedia.
 """
-import httplib
 import urllib2
 import json
 
@@ -70,7 +69,7 @@ def main():
     actorAges = getActorAge(actors)
     avgAge = calcAvgAge(actorAges)
     print(str(i)+" "+movies[i]+".")
-    print("Average actor age for "+movies[i]+" is "+str(avgAge)".")
+    print("Average actor age for "+movies[i]+" is "+str(avgAge)+".")
     
 if __name__ == '__main__':
   main()
