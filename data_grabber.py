@@ -66,7 +66,7 @@ def main():
   for i in range(len(movies)):
     actors = []
     actorsAge = 0
-    actors = getActorList(movies[i])
+    actors = getActorList(str(movies[i]))
     actorAges = getActorAge(actors)
     avgAge = calcAvgAge(actorAges)
     print(str(i)+" "+movies[i]+".")
