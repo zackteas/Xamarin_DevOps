@@ -26,7 +26,7 @@ def getActorList(movie):
   content = handle.read()
   actor_section = content.split("<span class=\"mw-headline\" id=\"cast\">Cast</span>", 1)
   actor_section = actor_section[1].split("<h2>", 1)
-  actor_section = actor_section[0].split"<li>")
+  actor_section = actor_section[0].split("<li>")
   for i in range(len(actor_section)):
     actor_section[i] = actor_section[i].split("<a href=\"/wiki/", 1)
   for i in range(len(actor_section)):
